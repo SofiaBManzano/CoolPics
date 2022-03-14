@@ -1,0 +1,5 @@
+.list {
+  @include desktop {
+    background-color: aqua;
+  }
+}
