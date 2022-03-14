@@ -1,0 +1,20 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: aqua;
+  height: 100vh;
+  &__text {
+    margin: 7px;
+    text-align: center;
+    font-family: $text-font;
+    color: gray;
+    font-size: 20px;
+  }
+  &__gif {
+    margin: 7px;
+    width: 50px;
+    height: 50px;
+  }
+}
