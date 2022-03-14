@@ -1,7 +1,9 @@
+import Title from "./Title";
+
 const Header = (props) => {
   return (
     <header className="header">
-      <h1 className={`header__title ${props.headerSize}`}>CoolPics</h1>
+      <Title headerSize={props.headerSize} />
     </header>
   );
 };

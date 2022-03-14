@@ -1,6 +1,11 @@
+//Core
 @import "../styles/core/Reset.scss";
 @import "../styles/core/Mixins";
 @import "../styles/core/Variables.scss";
-@import "../styles/layout/Header.scss";
+//Header
+@import "../styles/layout/Header/Header.scss";
+@import "../styles/layout/Header/Title.scss";
+
+//Main
 @import "../styles/layout/Main.scss";
 @import "../styles/Loading.scss";

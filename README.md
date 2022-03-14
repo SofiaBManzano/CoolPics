@@ -31,7 +31,7 @@ const Image = (props) => {
 };
 ```
 
-**componente Image**
+**componente Number**
 
 ```
 const Number = (props) => {
