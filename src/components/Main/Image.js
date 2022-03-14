@@ -5,7 +5,7 @@ const Image = (props) => {
       style={{ backgroundImage: `url('${props.eachImage.download_url}')` }}
       className="list__img"
     >
-      <Number />
+      <Number index={props.index} />
       {/* <img
       className="list__container--img"
       src={props.eachImage.download_url}

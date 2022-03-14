@@ -6,8 +6,10 @@
     align-items: center;
     margin-bottom: 27.51px;
     margin-top: 27.51px;
-    // background-color: aqua;
+
     &--rectangle {
+      margin-top: 14.97px;
+      margin-right: 15.13px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -15,9 +17,9 @@
       height: 42.11px;
       width: 69.04px;
       border-radius: 100px;
-      z-index: 50;
-      position: relative;
-      transform: translate(130px, 60px);
+      // z-index: 50;
+      // position: relative;
+      // transform: translate(130px, 60px);
     }
     &--number {
       text-align: center;
@@ -35,5 +37,7 @@
     background-position: center;
     border: 1px solid #eeeeee;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
   }
 }
