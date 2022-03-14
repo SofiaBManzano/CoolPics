@@ -1,13 +1,16 @@
 .list {
   margin-top: 86px;
   @include desktop {
+    width: 100%;
     margin-top: 174px;
     margin-left: 114px;
     margin-right: 114px;
     grid-gap: 16px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    // grid-template-columns: 384px 384px 384px;
+    align-items: center;
+    justify-items: center;
+    // grid-template-columns: auto auto auto;
+    grid-template-columns: 384px 384px 384px;
     background-color: aqua;
   }
 }
