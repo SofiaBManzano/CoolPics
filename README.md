@@ -4,7 +4,7 @@ A la hora de comenzar el ejercicio técnico me planteé que tipo de posibilidade
 Di unos pasos que me llevaron a cambiar otros. En cuanto a maquetación me he enfrentado a las siguientes posibilidades.
 La primera duda que tuve fue cómo maquetar la imagen y la pastilla con su numeración superpuesta. Lo primero que me vino a la cabeza fue crear un componente "Image.js" que contenía la etiqueta `<img>` y un componente "Number.js" que contuviera un `<span>` con un párrafo que contenía la numeración. Todo esto dentro de un `<li>` que formaría una lista con esos dos componentes que luego acomodaría con z-index para superponer el `<span>` sobre `<img>`.
 
-##componente Li
+**Componente Li**
 
 ```
 const Li = (props) => {
@@ -17,7 +17,7 @@ const Li = (props) => {
 };
 ```
 
-##Componente Image
+**Componente Image**
 
 ```
 const Image = (props) => {
@@ -31,7 +31,7 @@ const Image = (props) => {
 };
 ```
 
-## componente Image
+**componente Image**
 
 ```
 const Number = (props) => {
