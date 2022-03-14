@@ -9,5 +9,9 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
+    @include desktop {
+      width: 384px;
+      height: 336px;
+    }
   }
 }

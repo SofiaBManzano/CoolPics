@@ -10,6 +10,11 @@
       height: 42.11px;
       width: 69.04px;
       border-radius: 100px;
+      @include desktop {
+        width: 73px;
+        background-color: rgba(17, 17, 17, 0.8);
+        height: 45px;
+      }
     }
     &--number {
       text-align: center;

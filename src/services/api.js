@@ -1,7 +1,7 @@
 // Fichero src/services/api.js
 const callToApi = () => {
   // Llamamos al API
-  return fetch("https://picsum.photos/v2/list?page=2&limit=10")
+  return fetch("https://picsum.photos/v2/list?page=2&limit=9")
     .then((response) => response.json())
     .then((data) =>
       data.map((response) => ({

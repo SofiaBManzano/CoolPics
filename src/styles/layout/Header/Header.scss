@@ -1,6 +1,22 @@
 .header {
+  height: 64px;
   background-color: $gray;
   position: fixed;
   top: 0px;
   z-index: 999;
+  @include desktop {
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.small {
+  height: 48px;
+  @include desktop {
+    height: 42px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  }
 }

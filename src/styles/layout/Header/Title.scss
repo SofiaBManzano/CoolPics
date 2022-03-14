@@ -5,7 +5,7 @@
     color: $white;
     font-family: $text-font;
     padding: 13px;
-    @include tablet {
+    @include desktop {
       text-align: left;
       font-size: 48px;
       padding: 24px 1218px 24px 32px;
@@ -14,7 +14,7 @@
 }
 .small {
   font-size: 24px;
-  @include tablet {
+  @include desktop {
     font-size: 32px;
   }
 }
