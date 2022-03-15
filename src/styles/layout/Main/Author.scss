@@ -11,10 +11,22 @@
     position: absolute;
   }
 }
-.author-name span {
-  font-family: $text-font;
-  color: black;
-  font-size: 20px;
-  display: inline;
-  background-color: $white;
+.author-name {
+  display: flex;
+  flex-direction: row;
+  &__name {
+    @include desktop {
+      font-family: $text-font;
+      color: black;
+      font-size: 20px;
+      background-color: $white;
+    }
+    &--icon {
+      @include desktop {
+        width: 30px;
+        height: 50px;
+        margin-top: 5px;
+      }
+    }
+  }
 }
