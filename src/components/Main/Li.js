@@ -1,4 +1,3 @@
-// import Number from "./Number";
 import Image from "./Image";
 const Li = (props) => {
   return (

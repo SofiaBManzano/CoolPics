@@ -4,7 +4,7 @@ import Main from "./Main/Main";
 import callToApi from "../services/api";
 import { useEffect } from "react";
 import { useState } from "react";
-import Loading from "./Loading";
+
 function App() {
   //states
   const [imageElement, setImageElement] = useState([]);

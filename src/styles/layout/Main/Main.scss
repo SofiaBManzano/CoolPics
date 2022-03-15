@@ -3,20 +3,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
   }
 }
 .list {
   margin-top: 86px;
   margin-bottom: 86.02px;
   @include desktop {
-    background-color: pink;
     margin-top: 174px;
     margin-bottom: 81px;
+    display: grid;
     width: 1184px;
     grid-column-gap: 16px;
     grid-row-gap: 31px;
-    display: grid;
     grid-template-columns: 384px 384px 384px;
   }
 }

@@ -6,13 +6,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(17, 17, 17, 0.8);
+      background-color: $box-rectangle-color;
       height: 42.11px;
       width: 69.04px;
       border-radius: 100px;
+      position: absolute;
       @include desktop {
         width: 73px;
-        background-color: rgba(17, 17, 17, 0.8);
+        background-color: $box-rectangle-color;
         height: 45px;
       }
     }

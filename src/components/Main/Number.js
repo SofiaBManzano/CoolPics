@@ -1,6 +1,6 @@
 const Number = (props) => {
   return (
-    <span className="list__container--rectangle">
+    <span className="list__container--rectangle container">
       <p className="list__container--number">
         #
         {props.index.toLocaleString("en-US", {

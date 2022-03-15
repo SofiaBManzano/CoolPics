@@ -1,0 +1,20 @@
+.overlay {
+  display: none;
+  @include desktop {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 384px;
+    height: 336px;
+    position: absolute;
+  }
+}
+.author-name span {
+  font-family: $text-font;
+  color: black;
+  font-size: 20px;
+  display: inline;
+  background-color: $white;
+}
