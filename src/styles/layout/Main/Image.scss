@@ -1,35 +1,37 @@
 .list {
   &__img {
-    // background-color: #eeeeee;
-    // width: 366px;
-    // height: 281.98px;
-    // background-size: cover;
-    // background-position: center;
-    // border: 1px solid #eeeeee;
-    // background-repeat: no-repeat;
+    background-color: $border-color;
+    width: 366px;
+    height: 281.98px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $border-color;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
-    @include desktop {
-      width: 384px;
-      height: 336px;
-    }
   }
 }
+//hover desktop
 .item {
-  width: 366px;
-  height: 281.98px;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
+  @include desktop {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 384px;
+    height: 336px;
+  }
 }
 .item:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  -webkit-transition: all 0.3s ease-in-out;
+  @include desktop {
+    -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+  }
 }
 .wrapper {
-  overflow: hidden;
-  width: 366px;
-  height: 281.98px;
-  background-color: #d80000;
+  @include desktop {
+    overflow: hidden;
+    width: 384px;
+    height: 281.98px;
+  }
 }

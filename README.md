@@ -50,3 +50,10 @@ const Number = (props) => {
 ```
 
 Esta era mi propuesta inicial. Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-image, y ese `<div>` contendría el componente `<Number/>` que ya podría moverlo dentro del `<div>` con ayuda de Flexbox de manera más sencilla que con z-index
+
+Según la versión desktop de Figma, está hecha sobre la medida 1440x1342, igualmente la medida desktop más usada es 1200px de ancho por lo que trabajé con esa mediaquery como mínima y maqueté sobre la medida dada 1440 para fijarme en cada margen.
+
+hablar sobre el bem y los componentes individualizados
+Limite las medidas de lo que me devolvía la api en forma de lista para que no tardara tanto en cargar
+
+Puse un limite de dos dígitos en la pastilla para que, aunque en la maquetación solo salían 9 fotos, si en algún momento se necesitaran 15 resultados la numeración siguiera el mismo estilo de numeración

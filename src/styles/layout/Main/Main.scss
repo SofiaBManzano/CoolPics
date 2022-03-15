@@ -1,16 +1,22 @@
+.main {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+  }
+}
 .list {
   margin-top: 86px;
+  margin-bottom: 86.02px;
   @include desktop {
-    width: 100%;
+    background-color: pink;
     margin-top: 174px;
-    margin-left: 114px;
-    margin-right: 114px;
-    grid-gap: 16px;
+    margin-bottom: 81px;
+    width: 1184px;
+    grid-column-gap: 16px;
+    grid-row-gap: 31px;
     display: grid;
-    align-items: center;
-    justify-items: center;
-    // grid-template-columns: auto auto auto;
     grid-template-columns: 384px 384px 384px;
-    background-color: aqua;
   }
 }

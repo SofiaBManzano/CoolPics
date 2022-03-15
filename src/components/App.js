@@ -27,10 +27,10 @@ function App() {
     // }, [goingUp]);
   }, [headerSize]);
   return (
-    <div>
+    <>
       <Header headerSize={headerSize} />
       <Main isLoading={isLoading} imageElement={imageElement} />
-    </div>
+    </>
   );
 }
 

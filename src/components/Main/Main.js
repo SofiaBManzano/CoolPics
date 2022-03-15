@@ -17,6 +17,6 @@ const Main = (props) => {
       <Loading />
     );
   };
-  return renderList();
+  return <main className="main">{renderList()}</main>;
 };
 export default Main;
