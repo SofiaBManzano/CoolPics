@@ -1,20 +1,75 @@
-.header {
-  &__title {
-    text-align: center;
-    font-size: 32px;
-    color: $white;
-    font-family: $text-font;
-    padding: 13px;
-    @include desktop {
-      text-align: left;
-      font-size: 48px;
-      padding: 24px 1218px 24px 32px;
-    }
+.noAnimation {
+  text-align: center;
+  font-size: 32px;
+  color: $white;
+  font-family: $text-font;
+  padding: 13px;
+  @include desktop {
+    text-align: left;
+    font-size: 48px;
+    padding: 24px 1218px 24px 32px;
   }
 }
-.small {
-  font-size: 24px;
+.text {
+  text-align: center;
+  font-size: 32px;
+  color: $white;
+  font-family: $text-font;
+  padding: 13px;
+  animation: sizefontInitial ease 0.3s;
+  animation-fill-mode: forwards;
+
   @include desktop {
+    text-align: left;
+    font-size: 48px;
+    padding: 24px 1218px 24px 32px;
+    animation: sizeFontDesktopInitial ease 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes sizefontInitial {
+  from {
+    font-size: 24px;
+  }
+  to {
+    font-size: 32px;
+  }
+}
+@keyframes sizeFontDesktopInitial {
+  from {
+    font-size: 32px;
+  }
+  to {
+    font-size: 48px;
+  }
+}
+
+//header collapse
+.smallText {
+  font-size: 32px;
+  animation: sizefont ease 0.3s;
+  animation-fill-mode: forwards;
+
+  @include desktop {
+    font-size: 48px;
+    animation: sizeFontDesktop ease 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes sizefont {
+  from {
+    font-size: 32px;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+@keyframes sizeFontDesktop {
+  from {
+    font-size: 48px;
+  }
+  to {
     font-size: 32px;
   }
 }

@@ -3,7 +3,7 @@
   @include desktop {
     padding: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     background-color: rgba(255, 255, 255, 0.11);
     width: 384px;
     height: 336px;
@@ -11,12 +11,12 @@
     color: $white;
     opacity: 0;
     transition: 0.5s ease;
-    z-index: 999;
   }
   &__author {
     @include desktop {
-      // text-align: end;
-      font-size: 20px;
+      text-align: start;
+      // padding-right: 55px;
+      font-size: 10px;
       font-family: $text-font;
       text-shadow: 4px 4px 3px $gray;
     }
@@ -24,11 +24,11 @@
   &__icon {
     @include desktop {
       display: inline;
-      font-size: 20px;
+      font-size: 15px;
     }
   }
 }
-.author-name:hover {
-  opacity: 1;
-  z-index: 999;
-}
+// .author-name:hover {
+//   opacity: 1;
+//   // z-index: 2;
+// }

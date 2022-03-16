@@ -16,11 +16,15 @@
       transition: all 1s;
     }
   }
-  &__img:hover {
-    @include desktop {
-      transform: scale(1.05);
-    }
-  }
+  // &__img:hover {
+  //   @include desktop {
+  //     transform: scale(1.05);
+  //     -ms-transform: scale(1.2);
+  //     -webkit-transform: scale(1.2);
+  //     position: relative;
+  //     z-index: 0;
+  //   }
+  // }
 }
 
 //wrapper article
@@ -30,6 +34,18 @@
     width: 384px;
     height: 336px;
   }
+}
+.wrapper:hover .article__img {
+  @include desktop {
+    transform: scale(1.05);
+
+    position: relative;
+    z-index: 0;
+  }
+}
+.wrapper:hover .author-name {
+  opacity: 1;
+  transform: scale(1);
 }
 .wrapper:before {
   z-index: 100;

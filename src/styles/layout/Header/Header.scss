@@ -4,19 +4,25 @@
   position: fixed;
   top: 0px;
   z-index: 999;
+  transition: height 0.3s ease;
   @include desktop {
     height: 104px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: height 0.3s ease;
   }
 }
-.small {
+
+//headerCollapse
+.header.small {
   height: 48px;
+  transition: height 0.3s ease;
+
   @include desktop {
-    height: 42px;
+    height: 72px;
     display: flex;
-    // justify-content: center;
     align-items: center;
+    transition: height 0.3s ease;
   }
 }

@@ -1,4 +1,6 @@
 const Title = (props) => {
-  return <h1 className={`header__title ${props.headerSize}`}>CoolPics</h1>;
+  return (
+    <h1 className={` ${props.textSizeStop} ${props.textSize}`}>CoolPics</h1>
+  );
 };
 export default Title;
