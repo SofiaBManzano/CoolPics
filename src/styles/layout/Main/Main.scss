@@ -1,4 +1,9 @@
 .main {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @include desktop {
     display: flex;
     justify-content: center;
@@ -7,6 +12,12 @@
   &__ul {
     margin-top: 86px;
     margin-bottom: 86.02px;
+    @include tablet {
+      margin-bottom: 81px;
+      display: grid;
+      width: 768px;
+      grid-template-columns: 384px 384px;
+    }
     @include desktop {
       margin-top: 174px;
       margin-bottom: 81px;

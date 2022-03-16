@@ -57,3 +57,4 @@ hablar sobre el bem y los componentes individualizados
 Limite las medidas de lo que me devolvía la api en forma de lista para que no tardara tanto en cargar
 
 Puse un limite de dos dígitos en la pastilla para que, aunque en la maquetación solo salían 9 fotos, si en algún momento se necesitaran 15 resultados la numeración siguiera el mismo estilo de numeración
+Me he tomado la libertad de incluir un responsive tablet muy sencillo con grid y dos columnas porque con una sola columna central no quedaba vistoso, y tres columnas había demasiada información visual en poco espacio por lo que creía que lo mejor era dejarlo en dos.
