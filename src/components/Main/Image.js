@@ -1,14 +1,14 @@
 import Number from "./Number";
-import Author from "./Author";
+// import Author from "./Author";
 const Image = (props) => {
   return (
-    <article className="list__img wrapper">
+    <article className="article wrapper">
       <div
         style={{ backgroundImage: `url('${props.eachImage.download_url}')` }}
-        className="list__img item"
+        className="article__img"
       ></div>
       <Number index={props.index} />
-      <Author eachImage={props.eachImage} />
+      {/* <Author eachImage={props.eachImage} /> */}
     </article>
   );
 };

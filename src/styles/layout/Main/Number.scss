@@ -1,28 +1,24 @@
-.list {
-  &__container {
-    &--rectangle {
-      margin-top: 14.97px;
-      margin-right: 15.13px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $box-rectangle-color;
-      height: 42.11px;
-      width: 69.04px;
-      border-radius: 100px;
-      position: absolute;
-      @include desktop {
-        width: 73px;
-        background-color: $box-rectangle-color;
-        height: 45px;
-      }
-    }
-    &--number {
-      text-align: center;
-      font-size: 24px;
-      color: $white;
-      font-family: $text-font;
-      line-height: 28.13px;
-    }
+.container {
+  margin-top: 14.97px;
+  margin-right: 15.13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $box-rectangle-color;
+  height: 42.11px;
+  width: 69.04px;
+  border-radius: 100px;
+  position: absolute;
+  @include desktop {
+    width: 73px;
+    background-color: $box-rectangle-color;
+    height: 45px;
+  }
+  &__number {
+    text-align: center;
+    font-size: 24px;
+    color: $white;
+    font-family: $text-font;
+    line-height: 28.13px;
   }
 }

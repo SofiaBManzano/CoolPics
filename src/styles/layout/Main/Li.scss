@@ -1,15 +1,12 @@
-.list {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 27.51px;
-    margin-top: 27.51px;
-    @include desktop {
-      width: 100%;
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
+.list-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 27.51px;
+  margin-top: 27.51px;
+  @include desktop {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 }

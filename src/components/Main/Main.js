@@ -12,7 +12,7 @@ const Main = (props) => {
   ));
   const renderList = () => {
     return props.isLoading ? (
-      <ul className="list">{eachImage}</ul>
+      <ul className="main__ul">{eachImage}</ul>
     ) : (
       <Loading />
     );

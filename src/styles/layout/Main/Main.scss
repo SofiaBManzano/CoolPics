@@ -4,17 +4,17 @@
     justify-content: center;
     align-items: center;
   }
-}
-.list {
-  margin-top: 86px;
-  margin-bottom: 86.02px;
-  @include desktop {
-    margin-top: 174px;
-    margin-bottom: 81px;
-    display: grid;
-    width: 1184px;
-    grid-column-gap: 16px;
-    grid-row-gap: 31px;
-    grid-template-columns: 384px 384px 384px;
+  &__ul {
+    margin-top: 86px;
+    margin-bottom: 86.02px;
+    @include desktop {
+      margin-top: 174px;
+      margin-bottom: 81px;
+      display: grid;
+      width: 1184px;
+      grid-column-gap: 16px;
+      grid-row-gap: 31px;
+      grid-template-columns: 384px 384px 384px;
+    }
   }
 }

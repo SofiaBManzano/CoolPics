@@ -12,21 +12,18 @@
   }
 }
 .author-name {
-  display: flex;
-  flex-direction: row;
-  &__name {
+  &__author {
     @include desktop {
       font-family: $text-font;
       color: black;
       font-size: 20px;
       background-color: $white;
     }
-    &--icon {
-      @include desktop {
-        width: 30px;
-        height: 50px;
-        margin-top: 5px;
-      }
+  }
+  &__icon {
+    @include desktop {
+      color: $white;
+      font-size: 30px;
     }
   }
 }

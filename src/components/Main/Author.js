@@ -2,12 +2,10 @@ import { BsCardImage } from "react-icons/bs";
 const Author = (props) => {
   return (
     <div class="overlay">
-      <p className="author-name">
-        <span className="author-name__name">
-          <BsCardImage className="author-name__name--icon" />
-          {props.eachImage.author}
-        </span>
-      </p>
+      <span className="author-name__icon">
+        <i class="fa fa-solid fa-image"></i>{" "}
+      </span>
+      <p className="author-name__author">{props.eachImage.author}</p>
     </div>
   );
 };

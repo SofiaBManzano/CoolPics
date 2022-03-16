@@ -1,32 +1,28 @@
-.list {
+.article {
+  background-color: $border-color;
+  width: 366px;
+  height: 281.98px;
+  border: 1px solid $border-color;
+  display: flex;
+  justify-content: flex-end;
   &__img {
-    background-color: $border-color;
-    width: 366px;
-    height: 281.98px;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid $border-color;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-//hover image desktop
-.item {
-  @include desktop {
     background-position: center;
     background-size: cover;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    transition: all 1s;
+
+    @include desktop {
+      transition: all 1s;
+    }
+  }
+  &__img:hover {
+    @include desktop {
+      transform: scale(1.05);
+    }
   }
 }
-.item:hover {
-  @include desktop {
-    transform: scale(1.05);
-  }
-}
+
 //wrapper article
 .wrapper {
   @include desktop {
