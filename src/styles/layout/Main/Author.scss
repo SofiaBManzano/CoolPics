@@ -1,29 +1,34 @@
-.overlay {
+.author-name {
   display: none;
   @include desktop {
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.11);
     width: 384px;
     height: 336px;
     position: absolute;
+    color: $white;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 999;
   }
-}
-.author-name {
   &__author {
     @include desktop {
-      font-family: $text-font;
-      color: black;
+      // text-align: end;
       font-size: 20px;
-      background-color: $white;
+      font-family: $text-font;
+      text-shadow: 4px 4px 3px $gray;
     }
   }
   &__icon {
     @include desktop {
-      color: $white;
-      font-size: 30px;
+      display: inline;
+      font-size: 20px;
     }
   }
+}
+.author-name:hover {
+  opacity: 1;
+  z-index: 999;
 }

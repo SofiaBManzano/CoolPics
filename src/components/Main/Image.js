@@ -1,5 +1,5 @@
 import Number from "./Number";
-// import Author from "./Author";
+import Author from "./Author";
 const Image = (props) => {
   return (
     <article className="article wrapper">
@@ -8,7 +8,7 @@ const Image = (props) => {
         className="article__img"
       ></div>
       <Number index={props.index} />
-      {/* <Author eachImage={props.eachImage} /> */}
+      <Author eachImage={props.eachImage} />
     </article>
   );
 };
