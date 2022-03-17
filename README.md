@@ -1,6 +1,6 @@
 # Revel prueba técnica
 
-:female_detective: **LOS RETOS**
+:woman_juggling: **LOS RETOS**
 
 A la hora de comenzar el ejercicio técnico me planteé que tipo de posibilidades en cuanto a maquetación tenía.
 
@@ -62,7 +62,7 @@ Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-i
 - El reto más complicado al que me he afrontado en el test fue el extra del hover en desktop.
   Tenía claro que quería usar el autor de cada la fotografía y hacer un pequeño zoom a la imagen. Investigué mucho por internet y admito no lograr el efecto que buscaba, pero estoy contenta con el resultado ya que no se aleja mucho de lo que buscaba.
 
-**WEB USER FRIENDLY**
+:eyes: **WEB USER FRIENDLY**
 
 - Hice que la página fuera lo más user friendly posible, por lo que añadí un componente Loading que se mostraría hasta que la API devolviese los resultados.
 - Al principio tardaba mucho, eso era porque las medidas de las imágenes que me devolvía la API en forma de lista eran muy superiores a las que iba a necesitar en la maquetación.
@@ -74,8 +74,9 @@ Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-i
   ```
 
 - Me he tomado la libertad de incluir una mediaquery de Tablet muy sencillo, con un grid de dos columnas ya que con una sola columna central no vestía igual, con tres columnas había demasiada información visual en poco espacio por lo que pensé que lo mejor era dejarlo en dos.
-  **Apreciaciones a parte**
 
-- Puse un limite de dos dígitos en la pastilla para que, aunque en la prueba solo pedían 9 fotos, si en algún momento necesitáramos 15 resultados, la numeración siguiera el mismo estilo de numeración de dos dígitos y no tres a partir de #10.
-  :x: #010
+:alien: **Apreciaciones a parte**
+
+- Puse un limite de dos dígitos en la pastilla para que, aunque en la prueba solo pedían 9 fotos, si en algún momento necesitáramos 15 resultados, la numeración siguiera el mismo estilo de numeración de dos dígitos y no tres a partir de #10.  
+  :x: #010  
   :heavy_check_mark: #10
