@@ -1,6 +1,6 @@
 # Revel prueba técnica
 
-:woman_juggling: **LOS RETOS** :woman_juggling:
+:woman_juggling: **The challenges** :woman_juggling:
 
 At the time of starting the technical exercise I thought about what kind of possibilities I had in terms of layout, and that led me to face the following challenges.
 
