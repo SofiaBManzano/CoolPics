@@ -62,6 +62,8 @@ const Number = (props) => {
 Esta era mi propuesta inicial.
 Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-image, que junto con el posicionamiento logré colocar la pastilla de manera más precisa que con z-index.
 
+- Por último, otro mini reto fue enfrentarme al Error handling, algo que nunca había hecho pero que con ayuda de la documentación de React conseguí implementarlo.
+
 :eyes: **WEB USER FRIENDLY** :eyes:
 
 - Añadí un componente Loading que se mostraría hasta que la API devolviese los resultados.
