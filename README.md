@@ -8,6 +8,7 @@ Eso me llevó a enfrentarme a las siguientes posibilidades.
 
 - Según la versión desktop de Figma, el test está maquetado sobre la medida 1440x1342.
   Hice las media queries pensando en la medida desktop más usada 1200px, por lo que trabajé con esa medidida como mínima y maqueté sobre la medida dada propuesta en el test de 1440px para que todo fuera lo más exacto posible al modelo propuesto.
+  La versión mobile en figma es sobre iPhone 6/7/8 Plus, por lo que la versión mobile la maqueté fijándome en esa medida.
 
 - El reto más complicado al que me he enfrontado en el test fue el extra del hover en desktop.
   Tenía claro que quería usar el autor de cada la fotografía y hacer un pequeño zoom a la imagen. Investigué mucho por internet y admito no lograr el efecto que buscaba, pero estoy contenta con el resultado ya que no se aleja mucho de lo que buscaba.
