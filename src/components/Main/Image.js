@@ -3,7 +3,7 @@ const Image = (props) => {
   return (
     <div
       style={{ backgroundImage: `url('${props.eachImage.download_url}')` }}
-      className="article__img"
+      className="article__img img"
     >
       {" "}
       <Author eachImage={props.eachImage} />
