@@ -1,75 +1,31 @@
-.noAnimation {
-  text-align: center;
-  font-size: 32px;
-  color: $white;
-  font-family: $text-font;
-  padding: 13px;
-  @include desktop {
-    text-align: left;
-    font-size: 48px;
-    padding: 24px 1218px 24px 32px;
-  }
-}
 .text {
   text-align: center;
   font-size: 32px;
   color: $white;
   font-family: $text-font;
   padding: 13px;
-  animation: sizefontInitial ease 0.3s;
-  animation-fill-mode: forwards;
+  transition: font-size 0.3s ease;
 
   @include desktop {
     text-align: left;
     font-size: 48px;
     padding: 24px 1218px 24px 32px;
-    animation: sizeFontDesktopInitial ease 0.3s;
-    animation-fill-mode: forwards;
-  }
-}
-@keyframes sizefontInitial {
-  from {
-    font-size: 24px;
-  }
-  to {
-    font-size: 32px;
-  }
-}
-@keyframes sizeFontDesktopInitial {
-  from {
-    font-size: 32px;
-  }
-  to {
-    font-size: 48px;
+    transition: font-size 0.3s ease;
   }
 }
 
-//header collapse
-.smallText {
-  font-size: 32px;
-  animation: sizefont ease 0.3s;
-  animation-fill-mode: forwards;
+.textSmall {
+  padding: 13px;
+  text-align: center;
+  color: $white;
+  font-family: $text-font;
+  font-size: 24px;
+  transition: font-size 0.3s ease;
 
   @include desktop {
-    font-size: 48px;
-    animation: sizeFontDesktop ease 0.3s;
-    animation-fill-mode: forwards;
-  }
-}
-
-@keyframes sizefont {
-  from {
+    text-align: left;
+    padding: 24px 1218px 24px 32px;
     font-size: 32px;
-  }
-  to {
-    font-size: 24px;
-  }
-}
-@keyframes sizeFontDesktop {
-  from {
-    font-size: 48px;
-  }
-  to {
-    font-size: 32px;
+    transition: font-size 0.3s ease;
   }
 }

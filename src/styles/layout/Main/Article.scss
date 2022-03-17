@@ -1,0 +1,50 @@
+.article {
+  background-color: $border-color;
+  width: 366px;
+  height: 281.98px;
+  border: 1px solid $border-color;
+  display: flex;
+  justify-content: flex-end;
+  &__img {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    @include desktop {
+      transition: all 1s;
+    }
+  }
+}
+
+//wrapper article
+.wrapper {
+  @include desktop {
+    overflow: hidden;
+    width: 384px;
+    height: 336px;
+  }
+}
+.wrapper:hover .article__img {
+  @include desktop {
+    transform: scale(1.02);
+
+    position: relative;
+    z-index: 0;
+  }
+}
+.wrapper:hover .author-name {
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper:before {
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  overflow: visible;
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+  position: absolute;
+}

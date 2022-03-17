@@ -10,7 +10,6 @@ function App() {
   const [imageElement, setImageElement] = useState([]);
   const [headerSize, setHeaderSize] = useState("");
   const [textSize, setTextSize] = useState("");
-  const [textSizeStop, setTextSizeStop] = useState("noAnimation");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -23,14 +22,12 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY < 150) {
+      if (currentScrollY < 90) {
         setHeaderSize("");
-        setTextSize("text");
-        setTextSizeStop("");
+        setTextSize("");
       } else {
-        setTextSizeStop("");
         setHeaderSize("small");
-        setTextSize("text smallText");
+        setTextSize("Small");
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -39,11 +36,7 @@ function App() {
   }, [headerSize]);
   return (
     <>
-      <Header
-        textSizeStop={textSizeStop}
-        textSize={textSize}
-        headerSize={headerSize}
-      />
+      <Header textSize={textSize} headerSize={headerSize} />
       <Main isLoading={isLoading} imageElement={imageElement} />
     </>
   );
