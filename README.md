@@ -8,7 +8,7 @@ At the time of starting the technical exercise I thought about what kind of poss
 
 - The hardest challenge I faced in the test was the desktop hover extra development. It was clear to me that I wanted to display the author of each photograph and zoom in a little on the image. I did a lot of research on the internet and, while I admit I didn't achieve the effect I was looking for, I'm happy with the result, since it's not far from what I was looking for.
 
--One challenge I faced was how to layout the image and the tablet with the numbering superimposed. The first thing that came to mind was to create an "Image.js" component containing the `<img>` tag and a "Number.js" component containing a `<span>` with a paragraph containing the numbering. All of this inside a `<li>` that would form a list with those two components that I would then z-index to overlay the `<span>` over the `<img>`.
+- One challenge I faced was how to layout the image and the tablet with the numbering superimposed. The first thing that came to mind was to create an "Image.js" component containing the `<img>` tag and a "Number.js" component containing a `<span>` with a paragraph containing the numbering. All of this inside a `<li>` that would form a list with those two components that I would then z-index to overlay the `<span>` over the `<img>`.
 
 **Li Component**
 
