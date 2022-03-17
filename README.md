@@ -1,4 +1,4 @@
-# Revel prueba técnica
+# Revel Frontend challenge
 
 :woman_juggling: **The challenges** :woman_juggling:
 
