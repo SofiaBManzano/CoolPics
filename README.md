@@ -2,19 +2,15 @@
 
 :woman_juggling: **LOS RETOS** :woman_juggling:
 
-A la hora de comenzar el ejercicio técnico me planteé que tipo de posibilidades en cuanto a maquetación tenía.
+At the time of starting the technical exercise I thought about what kind of possibilities I had in terms of layout, and that led me to face the following challenges.
 
-Eso me llevó a enfrentarme a las siguientes posibilidades.
+- According to the desktop version of Figma, the test is laid out on the 1440x1342 size. I made the media queries thinking about the most used desktop size 1200px, so I worked with that size as a minimum and I modeled on the given size proposed in the 1440px test so that everything was as exact as possible to the proposed model. The mobile version in figma is made for the size of iPhone 6/7/8 Plus, so I developed the mobile version in that measurement.
 
-- Según la versión desktop de Figma, el test está maquetado sobre la medida 1440x1342.
-  Hice las media queries pensando en la medida desktop más usada 1200px, por lo que trabajé con esa medidida como mínima y maqueté sobre la medida dada propuesta en el test de 1440px para que todo fuera lo más exacto posible al modelo propuesto.
-  La versión mobile en figma es sobre iPhone 6/7/8 Plus, por lo que la versión mobile la maqueté fijándome en esa medida.
+- The hardest challenge I faced in the test was the desktop hover extra development. It was clear to me that I wanted to display the author of each photograph and zoom in a little on the image. I did a lot of research on the internet and, while I admit I didn't achieve the effect I was looking for, I'm happy with the result, since it's not far from what I was looking for.
 
-- El reto más complicado al que me he enfrontado en el test fue el extra del hover en desktop.
-  Tenía claro que quería usar el autor de cada la fotografía y hacer un pequeño zoom a la imagen. Investigué mucho por internet y admito no lograr el efecto que buscaba, pero estoy contenta con el resultado ya que no se aleja mucho de lo que buscaba.
-- Un reto al que me enfrenté fue cómo maquetar la imagen y la pastilla con la numeración superpuesta. Lo primero que me vino a la cabeza fue crear un componente "Image.js" que contenía la etiqueta `<img>` y un componente "Number.js" que contuviera un `<span>` con un párrafo que contenía la numeración. Todo esto dentro de un `<li>` que formaría una lista con esos dos componentes que luego acomodaría con z-index para superponer el `<span>` sobre `<img>`.
+-One challenge I faced was how to layout the image and the tablet with the numbering superimposed. The first thing that came to mind was to create an "Image.js" component containing the `<img>` tag and a "Number.js" component containing a `<span>` with a paragraph containing the numbering. All of this inside a `<li>` that would form a list with those two components that I would then z-index to overlay the `<span>` over the `<img>`.
 
-**Componente Li**
+**Li Component**
 
 ```
 const Li = (props) => {
@@ -27,7 +23,7 @@ const Li = (props) => {
 };
 ```
 
-**Componente Image**
+**Image Component**
 
 ```
 const Image = (props) => {
@@ -41,7 +37,7 @@ const Image = (props) => {
 };
 ```
 
-**componente Number**
+**Number Component**
 
 ```
 const Number = (props) => {
@@ -59,25 +55,24 @@ const Number = (props) => {
 };
 ```
 
-Esta era mi propuesta inicial.
-Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-image, que junto con el posicionamiento logré colocar la pastilla de manera más precisa que con z-index.
+This was my initial proposal. Finally I decided to use a `<div>` with a background-image instead of `<img>`, which together with the positioning managed to place the pill more precisely than with z-index.
 
-- Por último, otro mini reto fue enfrentarme al Error handling, algo que nunca había hecho pero que con ayuda de la documentación de React conseguí implementarlo.
+- Finally, another mini challenge was to face Error handling, something I had never done before but with the help of the React documentation I was able to implement it.
 
-:eyes: **WEB USER FRIENDLY** :eyes:
+:eyes: **User friendly** :eyes:
 
-- Añadí un componente Loading que se mostraría hasta que la API devolviese los resultados.
-- Al principio tardaba mucho, eso era porque las medidas de las imágenes que me devolvía la API en forma de lista eran muy superiores a las que iba a necesitar en la maquetación.
-  Para hacer más corta la espera de la llegada cambié esas medidas mediante:
+- I added a Loading component that would be displayed until the API returned the results.
+- At first the image downloads took a bit of time, that was because the measurements of the images that the API returned to me in the form of a list were much higher than those that I was going to need in the layout.
+  To make the latency shorter I changed those measures by:
 
   ```
    download_url: response.download_url.split("/").slice(0, -2).join("/") + "/800/1200"
   ```
 
-- Me he tomado la libertad de incluir una mediaquery muy sencilla para tablet con un grid de sólo dos columnas ya que con una sola columna central quedaba mucho aire a los lados y con tres columnas había demasiada información visual en poco espacio.
+- I have taken the liberty of including a very simple mediaquery for tablets with a grid of only two columns, since with a single central column there was a lot of air left on the sides and with three columns there was too much visual information in little space.
 
-:alien: **Apreciaciones a parte** :alien:
+:alien: **Bonus Track** :alien:
 
-- Puse un limite de dos dígitos en la pastilla numérica para que, aunque en la prueba solo pedían 9 fotos, si en algún momento necesitáramos 15 resultados, la numeración siguiera el mismo patrón numérico de dos dígitos y no tres.  
+- I put a limit of two digits in the numerical tablet so that, although in the test they only asked for 9 photos, if at some point we needed 15 results, the numbering would follow the same numerical pattern of two digits and not three.  
   :x: #010  
   :heavy_check_mark: #10
