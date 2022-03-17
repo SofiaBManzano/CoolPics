@@ -12,6 +12,7 @@ function App() {
   const [textSize, setTextSize] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  //call to API
   useEffect(() => {
     callToApi().then((apiData) => {
       setImageElement(apiData);
@@ -19,6 +20,7 @@ function App() {
     });
   }, []);
 
+  //useEffect scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -32,7 +34,6 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-    // }, [goingUp]);
   }, [headerSize]);
   return (
     <>

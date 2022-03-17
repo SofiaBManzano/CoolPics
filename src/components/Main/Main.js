@@ -10,6 +10,7 @@ const Main = (props) => {
       key={eachImage.id}
     />
   ));
+  //renderList depends on the API response
   const renderList = () => {
     return props.isLoading ? (
       <ul className="main__ul">{eachImage}</ul>
