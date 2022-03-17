@@ -1,7 +1,9 @@
 # Revel prueba técnica
 
+**MAQUETACIÓN**
 A la hora de comenzar el ejercicio técnico me planteé que tipo de posibilidades en cuanto a maquetación tenía.
-Di unos pasos que me llevaron a cambiar otros. En cuanto a maquetación me he enfrentado a las siguientes posibilidades.
+Di unos pasos que me llevaron a cambiar otros.
+En cuanto a maquetación me he enfrentado a las siguientes posibilidades.
 La primera duda que tuve fue cómo maquetar la imagen y la pastilla con su numeración superpuesta. Lo primero que me vino a la cabeza fue crear un componente "Image.js" que contenía la etiqueta `<img>` y un componente "Number.js" que contuviera un `<span>` con un párrafo que contenía la numeración. Todo esto dentro de un `<li>` que formaría una lista con esos dos componentes que luego acomodaría con z-index para superponer el `<span>` sobre `<img>`.
 
 **Componente Li**
@@ -49,12 +51,20 @@ const Number = (props) => {
 };
 ```
 
-Esta era mi propuesta inicial. Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-image, y ese `<div>` contendría el componente `<Number/>` que ya podría moverlo dentro del `<div>` con ayuda de Flexbox de manera más sencilla que con z-index
+Esta era mi propuesta inicial. Finalmente me decanté por en vez de `<img>` usar un `<div>` con un background-image, que junto con el posicionamiento de manera más precisa que con z-index.
 
-Según la versión desktop de Figma, está hecha sobre la medida 1440x1342, igualmente la medida desktop más usada es 1200px de ancho por lo que trabajé con esa mediaquery como mínima y maqueté sobre la medida dada 1440 para fijarme en cada margen.
+- Según la versión desktop de Figma, está maquetado sobre la medida 1440x1342.
+  Hice las media queries pensando en la medida desktop más usada (1200px), por lo que trabajé con esa mediaquery como mínima y maqueté sobre la medida dada (1440ps) para que todo fuera lo más exacto posible al modelo dado.
 
-hablar sobre el bem y los componentes individualizados
-Limite las medidas de lo que me devolvía la api en forma de lista para que no tardara tanto en cargar
+**SOBRE LA API**
 
-Puse un limite de dos dígitos en la pastilla para que, aunque en la maquetación solo salían 9 fotos, si en algún momento se necesitaran 15 resultados la numeración siguiera el mismo estilo de numeración
-Me he tomado la libertad de incluir un responsive tablet muy sencillo con grid y dos columnas porque con una sola columna central no quedaba vistoso, y tres columnas había demasiada información visual en poco espacio por lo que creía que lo mejor era dejarlo en dos.
+- Intenté que la página fuera lo más user friendly posible, por lo que añadí un componente Loading que se mostraría hasta que la API devolviese los resultados.
+- Al principio tardaba mucho, eso era porque las medidas de las imágenes que me devolvía la API en forma de lista (porque mi plan era devolver también el nombre del autor de las imágenes) eran muy superiores a las que iba a necesitar en la maquetación.
+  Para hacer más corta la espera cambié esas medidas mediante:
+  `download_url: response.download_url.split("/").slice(0, -2).join("/") + "/800/1200"`
+
+**Apreciaciones a parte**
+
+- Puse un limite de dos dígitos en la pastilla para que, aunque en la maquetación solo pedían 9 fotos, si en algún momento necesitáramos 15 resultados, la numeración siguiera el mismo estilo de numeración de dos dígitos y tres a partir de #10.
+
+- Me he tomado la libertad de incluir una mediaquery de Tablet muy sencillo, con un grid de dos columnas ya que con una sola columna central no vestía igual, con tres columnas había demasiada información visual en poco espacio por lo que pensé que lo mejor era dejarlo en dos.
