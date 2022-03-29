@@ -1,5 +1,5 @@
 const Title = (props) => {
-  const title = "CoolPics";
+  const title = "random pics";
 
   return <h1 className={`text${props.textSize}`}>{title}</h1>;
 };
