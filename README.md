@@ -1,4 +1,4 @@
-# Revel Frontend challenge
+# Frontend challenge
 
 :woman_juggling: **The challenges** :woman_juggling:
 
